@@ -31,7 +31,7 @@ def getresults (prob_preds, y):
     print (f'Display confusion matrix:\n {matrix} \n')
     print (f'Display ROC_AUC:\n {ROC_AUC} \n')
 
-    pyplot.plot(fpr, tpr, color='orange', linestyle='dotted', label='Deep Learning Model')
+    pyplot.plot(fpr, tpr, color='orange', linestyle='dotted', label='ROC - Random forest classification')
     pyplot.plot([0, 1], [0, 1], color='darkblue', linestyle='--', label='No-Skill Classifier')
     pyplot.scatter(fpr[ix], tpr[ix], marker='o', color='black', label='Best')
     # axis labels
